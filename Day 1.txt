@@ -1,0 +1,109 @@
+✅ What is DevOps? 
+DevOps is a cultural and technical approach that integrates software development (Dev) 
+and IT operations (Ops) teams to improve collaboration, automate processes, and 
+accelerate software delivery.
+It emphasizes continuous integration, continuous delivery (CI/CD), 
+infrastructure as code, monitoring, and rapid feedback loops to deliver high-quality software 
+efficiently and reliably.
+
+✅ What is Continuous Integration (CI)? 
+Continuous Integration (CI) is a DevOps practice where developers frequently integrate 
+their code into a shared repository, often multiple times a day.
+Each integration triggers an automated process that builds the code, runs tests, 
+and validates changes.
+This helps detect and fix issues early, improves code quality, and reduces 
+integration problems, making the development process faster and more reliable.
+
+✅ What is Continuous Delivery? 
+Continuous Delivery (CD) is an extension of Continuous Integration (CI) where the verified 
+build artifact (e.g., .jar, .zip) is automatically prepared for release into a staging or 
+production environment.
+In CD, deployment steps are automated using scripts or configuration files written by 
+the operations or DevOps team.
+After deployment, automated functional tests (such as critical regression or smoke tests) are 
+executed to validate that the application works correctly in the target environment.
+This ensures the application is always in a deployable state, reducing manual errors and 
+increasing release speed.
+
+Real world example to understand the above concepts
+🔄 Real-World DevOps Workflow Example
+👥 Team Members:
+Mark, Divi, Alben – Developers
+
+Rachet – DevOps/Operations Engineer
+
+Gayathri – QA Engineer
+
+🔹 Step 1: Traditional Development (Before DevOps)
+In the past, developers like Mark, Divi, and Alben would:
+
+Work on features in isolation for 2-3 weeks.
+
+Manually share their code with Rachet (Ops).
+
+Rachet would manually build and deploy the app.
+
+Gayathri would start testing after deployment.
+
+❌ Problems:
+
+Integration issues
+
+Manual errors in deployment
+
+Long delays in delivery
+
+“Works on my machine” bugs
+
+🔹 Step 2: DevOps Approach Introduced
+Goal: Automate and collaborate across Dev, QA, and Ops.
+
+🔸 Developers (Mark, Divi, Alben):
+Push code changes daily to a shared Git repository (e.g., GitHub).
+
+Write unit tests with each feature.
+
+🔸 CI Tool (e.g., GitHub Actions, Jenkins):
+Automatically triggered when code is pushed.
+
+Steps:
+
+Build: Compile the code.
+
+Rachet configured this in the CI server using a script (mvn clean install for Java).
+
+Test: Run unit tests (e.g., JUnit or PyTest).
+
+Lint/Scan: Check code quality, security (e.g., SonarQube).
+
+Notify: Send email/Slack alert if build/test fails.
+
+✅ This is Continuous Integration (CI) — fast feedback and early bug detection.
+
+🔹 Step 3: Continuous Delivery (CD) Begins
+Once the code passes all CI checks:
+
+🔸 Rachet (Ops):
+Sets up a CD pipeline (e.g., using GitHub Actions, Jenkins, or GitLab CI).
+
+Pipeline deploys the verified build artifact (e.g., .jar, .zip) to a staging server automatically using Ansible or Docker.
+
+🔸 Gayathri (QA):
+Writes automated functional test cases for critical flows (login, checkout, etc.).
+
+These tests run automatically after deployment in staging.
+
+If everything passes, the build is marked ready for production.
+
+Optional: Manual approval by product owner before going live.
+
+✅ This is Continuous Delivery (CD) — code is always in a deployable state.
+
+Summary with roles
+
+| Role                  | Action                                           | DevOps Concept         |
+| --------------------- | ------------------------------------------------ | ---------------------- |
+| **Mark, Divi, Alben** | Write and push code daily                        | DevOps + CI            |
+| CI Server             | Auto-build, test, notify                         | Continuous Integration |
+| **Rachet**            | Set up build/test/deploy automation              | DevOps + CD            |
+| **Gayathri**          | Automate and validate critical tests post-deploy | QA + CD                |

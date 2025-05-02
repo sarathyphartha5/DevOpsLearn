@@ -1,0 +1,11 @@
+Devops setup
+git hub repo - github.com/hkhcoder/vprofile-project
+Install all the softwares
+
+#1
+Download all windows tools in above git hub repo
+search for pre req and install all the softwares
+
+#2 sign in to different accounts
+-> github
+ 
