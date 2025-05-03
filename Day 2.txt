@@ -7,5 +7,9 @@ Download all windows tools in above git hub repo
 search for pre req and install all the softwares
 
 #2 sign in to different accounts
--> github
- 
+-> github (sarathyphartha5@gmail.com/November93@)
+ note- Go daddy is not installed, we will install once we reach the particular lesson
+ refer - sign ups which is lecture no - 14
+
+ -> create account on docker hub ( account created via github)
+ -> sonar cloud ( account created via github)
