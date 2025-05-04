@@ -1,0 +1,41 @@
+What is virtualization?
+It is basically having multiple virtual computers on a single computer
+-> To achieve this on any hardware, Supervisor (a software) installed on top of it and then we can
+multiple VMs (virtual machines) and each VM can have their own Operating system and the desired app/service
+can run independently
+
+Host OS:
+It is the operating system of the physical machine
+
+Guest OS:
+It is the operating system of the virtual machine
+
+VM:
+It is a short form of virtual machine
+
+Snapshot:
+It is a way of back up of taking every virtual machine
+
+Hypervisor:
+It is a tool or software that enables virtualization
+
+Types of Hypervisor:
+Type 1: Bare Metal 
+        It can be installed on a physical computer
+        On top of hypervisor, we can have either single or multiple VM
+        All the VMs can be clustered together, if any one VM down, another VM can take the 
+        request and serve the purpose
+        It can be used only for Production
+
+Type 2: It is for learning purpose
+        We can install this Hypervisor on a physical machine along with other apps can run in the machine
+        On top of hypervisor, we can have either single or multiple VM
+
+Practical ways to create VMs (basically Type 2)
+ -> first, Creating VM via manual process
+    configured two VM manually in oracle virtual box
+    one is centosvm
+    another one is ubuntuvm (server)
+ 
+ -> second, Creating VM via automatic process
+ 

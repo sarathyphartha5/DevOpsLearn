@@ -13,3 +13,7 @@ search for pre req and install all the softwares
 
  -> create account on docker hub ( account created via github)
  -> sonar cloud ( account created via github)
+
+ #3 AWS account setup
+ learndevops93.xyz
+ devopsinfo93
